@@ -72,7 +72,6 @@ export default function SearchPlaylist() {
             <SearchBar 
               searchTerm={searchTerm}
               handleInputChange={handleInputChange}
-              searchResults={searchResults}
             />
         </div>
         <div className="flex flex-wrap justify-center overflow-y-auto gap-5 max-h-[80vh] scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300">
