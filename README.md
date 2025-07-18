@@ -14,4 +14,7 @@ This app connects to the backend integration which offers a way to securly gener
 - Modify and search for artists
 
 
+#Local development
 
+- "/spotify-react/" was added to a url for ensuring github pages properly redirects
+- ENV on backend prefers local host 5173

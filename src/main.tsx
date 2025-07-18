@@ -16,7 +16,7 @@ ReactDOM.createRoot(root).render(
     <StrictMode>
        <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/spotify-react/dashboard" element={<Dashboard />} />
       </Routes>
     </StrictMode>
   </BrowserRouter>
