@@ -1,4 +1,4 @@
-import { useState,useEffect, createContext, useContext } from 'react';
+import { useState,useEffect, createContext } from 'react';
 import { useSearchParams, useNavigate} from 'react-router';
 
 import MainNav from './components/navigation/MainNav';

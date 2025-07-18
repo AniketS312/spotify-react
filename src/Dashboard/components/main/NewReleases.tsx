@@ -18,7 +18,6 @@ interface Album {
 export default function NewReleases() {
     const [newReleases, setNewReleases] = useState<Album[]>([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
     const [loadMoreLink, setLoadMoreLink] = useState<string | null>(null);
     const [showMoreButton, setShowMoreButton] = useState(true);
 
@@ -32,10 +31,8 @@ export default function NewReleases() {
 
         async function fetchNewReleases() {
             setLoading(true);
-            setError(null);
             try {
                 if (!accessToken) {
-                    setError("Access token is missing");
                     return;
                 }
                 const response = await fetch('https://api.spotify.com/v1/browse/new-releases?limit=48', {
@@ -50,7 +47,7 @@ export default function NewReleases() {
                 setLoadMoreLink(data.albums.next);
                 setNewReleases(data.albums.items)
             } catch (err: any) {
-                setError(err.message || "Unknown error");
+                console.log(err.message || "Unknown error");
             } finally {
                 setLoading(false);
             }

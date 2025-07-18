@@ -1,12 +1,11 @@
-import { Search, Mic } from 'lucide-react'
+import { Search } from 'lucide-react'
 
 interface SearchBarProps {
   searchTerm: string;
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  searchResults?: any[]; // Optional, since it's not used in the component
 }
 
-function SearchBar({ searchTerm, handleInputChange, searchResults }: SearchBarProps) {
+function SearchBar({ searchTerm, handleInputChange }: SearchBarProps) {
   return (
       <div className="">
       <form

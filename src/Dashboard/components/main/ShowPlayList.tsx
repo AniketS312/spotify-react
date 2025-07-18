@@ -8,7 +8,6 @@ export default function ShowPlayList() {
     let accessToken = localStorage.getItem('access_token');
     const [playlists, setPlaylists] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
 
     const notificationContext = useContext(CurrentNotificationContext);
     if (!notificationContext) return null;
@@ -17,7 +16,6 @@ export default function ShowPlayList() {
     useEffect(() => {
     async function fetchUserPlaylists() {
         setLoading(true);
-        setError(null);
         try {
             if (!accessToken) {
                 throw new Error("Access token is missing");
@@ -34,7 +32,7 @@ export default function ShowPlayList() {
             const data = await response.json();
             setPlaylists(data.items);
         } catch (err: any) {
-            setError(err.message || "Unknown error");
+            console.log(err.message || "Unknown error");
         } finally {
             setLoading(false);
         }

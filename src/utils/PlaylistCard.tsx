@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface PlaylistCardProps {
   id: string;
@@ -12,7 +12,6 @@ interface PlaylistCardProps {
 }
 export default function PlaylistCard({ name, description, images, external_urls, id, playlistUserId, playlistActionText, playlistActionFunction }: PlaylistCardProps) {
       const [userId, setUserId] = useState<string | null>(null);
-      const [error, setError] = useState<string | null>(null);
       let accessToken = localStorage.getItem('access_token');
 
     
@@ -34,7 +33,7 @@ export default function PlaylistCard({ name, description, images, external_urls,
           fetchUserId();
       } catch (error) {
           console.error("Failed to fetch user ID:", error);
-          setError("Failed to fetch user ID");
+          console.log("Failed to fetch user ID");
       }
   
       }, []);

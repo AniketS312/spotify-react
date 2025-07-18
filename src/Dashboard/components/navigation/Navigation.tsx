@@ -1,4 +1,4 @@
-import { FaList, FaNewspaper, FaSort, FaSpotify, FaSignOutAlt , FaRegListAlt } from "react-icons/fa";
+import { FaList, FaNewspaper, FaSpotify, FaSignOutAlt , FaRegListAlt } from "react-icons/fa";
 
 // Navigation menu structure. Ensure to add a relevant icon from react-icons for each item.
 const menu = [
