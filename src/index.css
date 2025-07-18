@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+
+.spotify-black-bg {
+  background-color: #121212;
+}
+.spotify-black {
+  color: #121212;
+}
+
+.spotify-green-bg {
+  background-color: #1ED760;
+}
+
+.spotify-green {
+  color: #1ED760;
+}
+
+.hover\:spotify-green:hover {
+  color: #1ED760;
+}
+
+.spotify-white-bg {
+  background-color: #FFFFFF;
+}
+
+.spotify-white {
+  color: #FFFFFF;
+}
+
+.spotify-gray-bg {
+  background-color: rgb(40,40,40);
+}
+
+.spotify-gray {
+  color: rgb(40,40,40);
+}
+
+.spotify-yellow-bg {
+  background-color: #ffe600;
+}
+
+
+/* Animation */
+
+@theme {
+  --animate-display: fadeIn 1s ease-in-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
