@@ -12,7 +12,7 @@ if (!root) {
 }
 
 ReactDOM.createRoot(root).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/spotify-react">
     <StrictMode>
        <Routes>
         <Route path="/" element={<App />} />
