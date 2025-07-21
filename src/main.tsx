@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import './index.css'
 
 import App from './App.tsx'
-import Dashboard from './Dashboard/index.tsx';
+import Dashboard from './Dashboard/Dashboard.tsx';
 
 const root = document.getElementById("root");
 if (!root) {

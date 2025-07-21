@@ -2,7 +2,7 @@ import{ useEffect, useState, useContext } from 'react';
 import LoadingPlaceHolder from '../../../utils/Loading';
 import PlaylistCard from '../../../utils/PlaylistCard';
 import { removePlaylist } from '../../../utils/helpers';
-import { CurrentNotificationContext } from '../../../Dashboard/index';
+import { CurrentNotificationContext } from '../../Dashboard';
 
 export default function ShowPlayList() {
     let accessToken = localStorage.getItem('access_token');

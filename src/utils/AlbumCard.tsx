@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import {truncateAfter20, truncateAfter14 } from "./helpers";
 import { getGenreFromArtist, addAlbum } from "./helpers";
-import { CurrentNotificationContext } from "../Dashboard/index";
+import { CurrentNotificationContext } from "../Dashboard/Dashboard";
 
 interface AlbumCardProps {
   image: string;

@@ -3,7 +3,7 @@ import SearchBar from "../../../utils/SearchBar"
 import PlaylistCard from "../../../utils/PlaylistCard"
 import { truncateAfter200 } from "../../../utils/helpers"
 import { addPlaylist } from "../../../utils/helpers"
-import { CurrentNotificationContext } from "../../../Dashboard/index"
+import { CurrentNotificationContext } from "../../Dashboard"
 
 type Playlist = {
   id: string;

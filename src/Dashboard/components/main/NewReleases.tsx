@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from "react"
 import AlbumCard from "../../../utils/AlbumCard";
-import  {CurrentNotificationContext}  from "../../../Dashboard/index";
+import  {CurrentNotificationContext}  from "../../Dashboard";
 import LoadingPlaceHolder from "../../../utils/Loading";
 
 interface Album {
