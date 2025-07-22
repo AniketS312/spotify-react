@@ -5,7 +5,7 @@ import 'tailwind-scrollbar';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/<REPO>/',
+  base: '/spotify-react/',
   plugins: [
     react(),
     tailwindcss(),
