@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "postbuild": "copy [index.html](http://_vscodecontentref_/3) dist\\404.html"
+    "postbuild": "copy dist\\index.html dist\\404.html"
 
   },
   "dependencies": {
