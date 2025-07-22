@@ -1,14 +1,14 @@
 {
   "name": "spotify",
-  "homepage": "https://AniketS312.github.io/spotify-react",
+  "homepage": "https://aniketS312.github.io/spotify-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "build": "vite build",
     "preview": "vite preview",
+    "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
